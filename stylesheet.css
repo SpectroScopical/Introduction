@@ -91,4 +91,38 @@ footer {
     border-top: 0.5vw solid white;
     text-align: center;
     font-size: 3vw;
+    position: relative;
+    bottom: 0;
 }
+
+
+@media screen and (max-width: 680px) {
+    .mainbox {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    
+    .invis {
+        display: block;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subbox {
+        margin-right: 35%;
+        margin-left: 35%;
+        margin-bottom: 5%;
+        width: 30%;
+    }
+  }
